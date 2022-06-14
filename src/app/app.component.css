@@ -1,0 +1,22 @@
+.header{
+    position: absolute;
+    top: 0;
+    color: antiquewhite;
+    background-color:blueviolet;
+    height:1cm;
+    width: 100%
+    }
+    #entry{
+        color: antiquewhite;
+    }
+    #create-entry{
+        color: antiquewhite;
+    }
+    .footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color:bisque;
+    height:2cm;
+    width: 100%
+    }

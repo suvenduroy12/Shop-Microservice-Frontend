@@ -1,0 +1,55 @@
+<h2>Update Entry</h2>
+
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+        <div>
+        <label>Id:  </label> 
+        <input
+               type="text"
+               id="entry_id"
+               [(ngModel)]="entry.id" name="entry_id" 
+               required
+             ><br /><br />
+            </div>
+        <div>
+        <label>Customer Name:</label> 
+       <input
+          type="text"
+          
+          id="cust_name"
+        
+          [(ngModel)]="entry.name" name="cust_name"
+  
+          required
+        >
+        <!--class="form-control"-->
+        <br /><br />
+    </div>
+    
+    <div>
+        <label>Product Name: </label>
+        <input
+          type="text"
+          id="product_name"
+          
+          [(ngModel)]="entry.product" name="product_name"
+          required
+        ><br /><br />
+    </div>
+    <div>
+       <label>Price: </label> 
+       <input
+          type="text"
+          id="price"
+          [(ngModel)]="entry.price" name="price"
+         
+          
+          required
+        ><br /><br />
+    </div>
+    
+    
+    <button class="btn btn-success" type="submit" name="showbtn">Submit</button>
+    
+    </div>
+</form>

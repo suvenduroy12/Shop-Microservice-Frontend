@@ -1,0 +1,53 @@
+<h2>New Entry</h2>
+
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+      <div>
+        <label>Customer Name:</label> 
+       <input
+          type="text"
+          class="form-control"
+          id="cust_name"
+          placeholder="Please Enter Customer Name...."
+          required
+          [(ngModel)]="entry.name" name="cust_name"
+         
+        >
+     <small  *ngFor="let err of errors" class="alert alert-danger"> 
+        {{ err }} 
+      
+     </small>
+      </div>
+
+    <br />
+    <div>
+        <label>Product Name: </label>
+        <input
+          type="text"
+          class="form-control"
+          id="product_name"
+          placeholder="Please Enter Product Name...."
+          [(ngModel)]="entry.product" name="product_name"
+          required
+        >
+    </div>
+    <br>
+    <div>
+       <label>Price: </label> 
+       <input
+          type="text"
+          class="form-control"
+          id="price"
+          [(ngModel)]="entry.price" name="price"
+          placeholder="Please Enter Price...."
+          
+          required
+        >
+    </div>
+    <br>
+    
+    
+    <button class="btn btn-success" type="submit" name="showbtn" (click)="onSubmit()" >Submit</button>
+    
+    </div>
+</form>
